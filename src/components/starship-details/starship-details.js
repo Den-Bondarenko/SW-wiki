@@ -1,5 +1,5 @@
 import React from "react";
-import './starship.css';
+import './starship-details.css';
 
 const StarshipDetails = () => {
     return (
