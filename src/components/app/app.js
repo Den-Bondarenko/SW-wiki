@@ -15,7 +15,8 @@ export default class App extends Component {
         return(
             <div className='sw-wiki-app'>
                 <Header />
-                <RandomPlanet className='Randomplanet'/>
+                <RandomPlanet className='RandomPlanet'/>
+                <PersonDetails className='personDetails'/>
             </div>
         );
     };
