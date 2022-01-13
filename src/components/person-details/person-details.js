@@ -1,8 +1,9 @@
 import React, { Component } from "react";
+import SwapiService from "../../services/swapi-service";
 import './person-details.css';
 
 export default class PersonDetails extends Component {
-
+    swapiService = new SwapiService;
     render() {
         return (
             <div className="person-details">
