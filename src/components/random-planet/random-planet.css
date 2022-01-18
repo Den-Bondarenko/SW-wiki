@@ -1,3 +1,7 @@
 .random-planet {
     background-color: cadetblue;
 }
+
+.img-planet {
+    max-width: 250px;
+}

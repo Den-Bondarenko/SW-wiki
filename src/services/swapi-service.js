@@ -33,7 +33,7 @@ export default class SwapiService {
     };
 
     async getPerson(id) {
-        const person = await this.getResource(`/planets/${id}`);
+        const person = await this.getResource(`/people/${id}`);
         return this._transformPerson(person);
     };
 
@@ -56,8 +56,8 @@ export default class SwapiService {
         return {
             id: this._extractId(person),
             name: person.name,
-            birthUear: person.birth_uear,
-            homeworld: person.homeworld
+            birthYear: person.birth_year,
+            height: person.height
         }
     };
 

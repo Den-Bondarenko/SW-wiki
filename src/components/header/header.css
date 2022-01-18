@@ -1,6 +1,42 @@
 .header {
-    background-color: blue;
+    background-color: slateblue;
+}
+
+.header .logo {
+    font-size: 3.5rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.header .menu {
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
     align-items: center;
+}
+
+.header .menu a {
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 0 5px;
+}
+
+.header .menu a:hover {
+    font-weight: bold;
+}
+
+@media (min-width: 600px) {
+    .header {
+        display: flex;
+    }
+
+    .header .logo {
+        flex: 1;
+    }
+
+    .header .menu {
+        flex-direction: row;
+        justify-content: space-around;
+        flex: 1;
+    }
 }

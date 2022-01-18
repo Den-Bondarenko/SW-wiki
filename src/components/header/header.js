@@ -4,10 +4,12 @@ import './header.css';
 const Header = () => {
     return (
         <div className="header">
-            <h1>Hello</h1>
-            <a>Persons</a>
-            <div>Planets</div>
-            <div>Starships</div>
+            <div className="logo">SW Wiki</div>
+            <div className="menu">
+                <a href="#">Persons</a>
+                <a href="#">Planets</a>
+                <a href="#">Starships</a>
+            </div>
         </div>
     );
 };
