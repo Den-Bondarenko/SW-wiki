@@ -1,8 +1,9 @@
 .header {
-    background-color: slateblue;
+    background-color: rgb(27, 27, 27);
 }
 
 .header .logo {
+    color: rgb(243, 247, 12);
     font-size: 3.5rem;
     text-align: center;
     text-transform: uppercase;
@@ -15,7 +16,7 @@
 }
 
 .header .menu a {
-    color: black;
+    color: rgb(243, 247, 12);
     text-decoration: none;
     text-transform: uppercase;
     padding: 0 5px;

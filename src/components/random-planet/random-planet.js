@@ -55,24 +55,27 @@ const PlanetView = ({ planet }) => {
 
     return (
         <React.Fragment>
-            <img className="img-planet" src={`https://starwars-visualguide.com/assets/img/planets/${id}.jpg`}/>
-            <div>
-                <h4>{name}</h4>
-                <ul>
-                    <li>
-                        <span>Population - </span>
-                        <span>{population}</span>
-                    </li>
-                    <li>
-                        <span>Rotation Period - </span>
-                        <span>{rotationPeriod}</span>
-                    </li>
-                    <li>
-                        <span>Diameter - </span>
-                        <span>{diameter}</span>
-                    </li>
-                </ul>
+            <div className="random-planet">
+                <img className="img-random-planet" src={`https://starwars-visualguide.com/assets/img/planets/${id}.jpg`}/>
+                <div className="random-planet-info">
+                    <h4>{name}</h4>
+                    <ul>
+                        <li>
+                            <span>Population - </span>
+                            <span>{population}</span>
+                        </li>
+                        <li>
+                            <span>Rotation Period - </span>
+                            <span>{rotationPeriod}</span>
+                        </li>
+                        <li>
+                            <span>Diameter - </span>
+                            <span>{diameter}</span>
+                        </li>
+                    </ul>
+                </div>
             </div>
+            
         </React.Fragment>
     );
 };

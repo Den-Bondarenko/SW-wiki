@@ -37,11 +37,19 @@ export default class PersonDetails extends Component {
         return (
             <div className="person-details">
                 <img className="img-person" src={`https://starwars-visualguide.com/assets/img/characters/${id}.jpg`}/>
-                <ul>
-                    <li>{name}</li>
-                    <li>{birthYear}</li>
-                    <li>{height}</li>
-                </ul>
+                <div className="person-details-info">
+                    <h4>{name}</h4>
+                    <ul>
+                        <li>
+                            <span>Birth Year - </span>
+                            <span>{birthYear}</span>
+                        </li>
+                        <li>
+                            <span>Height - </span>
+                            <span>{height}</span>
+                        </li>
+                    </ul>
+                </div>
             </div>
         );
     };
