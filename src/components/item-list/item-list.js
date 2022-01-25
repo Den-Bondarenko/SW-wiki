@@ -20,8 +20,19 @@ export default class ItemList extends Component {
             .then((peopleList) => {
                 this.setState({
                     peopleList
-                })
-            })
+                });
+            });
+    };
+
+    renderItems(arr) {
+        return arr.map(({id, name}) => {
+            return (
+                <li key={id}
+                    onClick={() => this.props.onPersonSelected(id)}>
+                    {name}
+                </li>
+            );
+        });
     };
 
     render() {
@@ -32,11 +43,11 @@ export default class ItemList extends Component {
             return <Spinner />;
         };
 
+        const items = this.renderItems(peopleList);
+
         return(
-            <ul>
-                <li>xLuke</li>
-                <li>Darth</li>
-                <li>R2-D2</li>
+            <ul className="item-list">
+                {items}
             </ul>
         );
     };
