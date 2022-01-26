@@ -88,7 +88,6 @@ const PlanetView = ({ planet }) => {
                     </ul>
                 </div>
             </div>
-            
         </React.Fragment>
     );
 };

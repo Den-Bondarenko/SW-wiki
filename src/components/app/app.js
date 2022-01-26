@@ -28,13 +28,15 @@ export default class App extends Component {
                 <RandomPlanet className='RandomPlanet'/>
                 <ItemList 
                     onPersonSelected={this.onPersonSelected}
-                    getData={this.swapiService.getAllPeople}/>
+                    getData={this.swapiService.getAllPeople}
+                    renderItem={({name, birthYear}) => `${name} (${birthYear})`}/>
                 <PersonDetails className='personDetails'
                     personId={this.state.selectedPerson}/>
 
                 <ItemList 
                     onPersonSelected={this.onPersonSelected}
-                    getData={this.swapiService.getAllPlanets}/>
+                    getData={this.swapiService.getAllPlanets}
+                    renderItem={({name}) => (<span> {name} <button>!!</button> </span>)}/>
             </div>
         );
     };
