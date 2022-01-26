@@ -1,5 +1,5 @@
 :root {
-    font-family: 'DotGothic16', sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 20px;
 }
 
@@ -10,5 +10,6 @@
 }
 
 .sw-wiki-app {
-    background-color: black;
+    max-width: 1000px;
+    margin: auto;
 }
