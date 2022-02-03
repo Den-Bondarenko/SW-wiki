@@ -13,3 +13,15 @@
     max-width: 1000px;
     margin: auto;
 }
+
+.sw-wiki-app .person-preview {
+    display: flex;
+}
+
+.sw-wiki-app .person-preview .item-list {
+    flex: 1;
+}
+
+.sw-wiki-app .person-preview .person-details {
+    flex: 1;
+}

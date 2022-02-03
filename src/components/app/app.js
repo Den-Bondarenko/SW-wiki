@@ -26,13 +26,14 @@ export default class App extends Component {
             <div className='sw-wiki-app'>
                 <Header />
                 <RandomPlanet className='RandomPlanet'/>
-                <ItemList 
-                    onPersonSelected={this.onPersonSelected}
-                    getData={this.swapiService.getAllPeople}
-                    renderItem={({name, birthYear}) => `${name} (${birthYear})`}/>
-                <PersonDetails className='personDetails'
-                    personId={this.state.selectedPerson}/>
-
+                <div className='person-preview'>
+                    <ItemList className="item-list"
+                        onPersonSelected={this.onPersonSelected}
+                        getData={this.swapiService.getAllPeople}
+                        renderItem={({name, birthYear}) => `${name} (${birthYear})`}/>
+                    <PersonDetails className='person-details'
+                        personId={this.state.selectedPerson}/>
+                </div>
                 <ItemList 
                     onPersonSelected={this.onPersonSelected}
                     getData={this.swapiService.getAllPlanets}
